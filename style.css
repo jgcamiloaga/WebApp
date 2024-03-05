@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Arial';
     box-sizing: border-box;
 }
 
@@ -10,6 +11,25 @@ body{
 }
 
 header{ 
+    height: 100px;
+    padding: 25px;
+    background-color: #006;
+}
+.section-logo{
+    display: flex;
+    gap: 15px;
+    text-decoration: none;
+    padding-left: 100px;
+}
+
+header img{
+    height: 50px;
+    width: 50px;
+}
+
+header h1{
+    font-size: 40px;
+    color: white;
 }
 
 main{
@@ -20,7 +40,7 @@ main{
 
 .link{
     grid-column: 1/5;
-    background-color: red;
+    background-color: #222;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -30,15 +50,23 @@ main{
     height: 40px;
     width: 320px;
     padding: 10px;
+    outline:none;
+    font-size: 16px;
+    border-radius: 4px;
 }
 
 .simulator-button{
     height: 40px;
     width: 80px;
     padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: orangered;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-.categorias{
+.categories{
     grid-column: 1;
     grid-row: 2/10;
     background-color: aqua;
@@ -56,6 +84,17 @@ main{
 .app-1{
     grid-column: 1;
     background-color: bisque;
+    display: block;
+    text-align: center;
+}
+
+.app-1 img{
+    height: 80%;
+    width: 100%;
+}
+
+.app-1 h2{
+    height: 20%;
 }
 
 .app-2{
